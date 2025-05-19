@@ -43,15 +43,14 @@ nav a:hover {
 
 .main-gallery {
   display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
+  flex-direction: column; /* imagens em coluna, uma abaixo da outra */
+  gap: 20px;
+  align-items: center;
 }
 
-.main-gallery img,
-.extra-images img {
-  width: 300px; /* Ajuste padrão: metade do tamanho típico de imagens grandes */
-  height: 200px;
+.main-gallery img {
+  width: 150px; /* 25% de uma imagem grande (ex: 600px) */
+  height: 100px;
   object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
@@ -69,6 +68,14 @@ nav a:hover {
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
+}
+
+.extra-images img {
+  width: 150px; /* também reduzido para 25% */
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 footer {
