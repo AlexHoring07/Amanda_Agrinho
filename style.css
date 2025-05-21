@@ -44,7 +44,7 @@ nav a:hover {
 }
 
 .container {
-  padding: 100px 20px 20px; /* Adicionado espaço por causa do menu fixo */
+  padding: 100px 20px 20px; /* Espaço para o menu fixo */
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
@@ -82,4 +82,25 @@ footer {
   text-align: center;
   padding: 15px;
   margin-top: 30px;
+}
+
+/* Botão flutuante para voltar ao topo */
+.voltar-topo {
+  position: fixed;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #b57edc;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid white;
+  transition: background-color 0.3s;
+  z-index: 999;
+}
+
+.voltar-topo:hover {
+  background-color: #4a235a;
 }
