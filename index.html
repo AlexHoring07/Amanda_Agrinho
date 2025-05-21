@@ -6,19 +6,16 @@
   <title>Agrinho 2025 - Conexão Campo-Cidade</title>
   <link rel="stylesheet" href="style.css" />
 </head>
-<body>
-  <header id="topo">
+<body id="topo">
+  <header>
     <h1>Agrinho 2025 - Festejando a Conexão Campo-Cidade</h1>
   </header>
 
   <nav>
     <a href="#inicio">Início</a>
     <a href="#sobre">Sobre o Tema</a>
-    <a href="#galeria-final">Galeria</a>
+    <a href="#galeria">Galeria</a>
   </nav>
-
-  <!-- Botão lateral para voltar ao topo -->
-  <a href="#topo" class="voltar-topo">↑ Topo</a>
 
   <div class="container" id="inicio">
     <section class="main-gallery">
@@ -50,7 +47,7 @@
       </p>
     </section>
 
-    <div class="extra-images" id="galeria-final">
+    <div class="extra-images" id="galeria">
       <img src="Agrinho.0.png" alt="Agrinho 0" />
       <img src="Agrinho.1.jpg" alt="Agrinho 1" />
       <img src="Agrinho.2.jpg" alt="Agrinho 2" />
@@ -58,11 +55,26 @@
     </div>
   </div>
 
+  <!-- Botão flutuante para voltar ao topo -->
+  <a href="#topo" class="voltar-topo" id="voltarTopo">↑ Topo</a>
+
   <footer>
     <p>
       &copy; Colégio Estadual Padre Cláudio Morelli 2º Ano D - Amanda Cagè - 2025
       Agrinho
     </p>
   </footer>
+
+  <script>
+    const botaoTopo = document.getElementById("voltarTopo");
+
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 200) {
+        botaoTopo.style.display = "block";
+      } else {
+        botaoTopo.style.display = "none";
+      }
+    });
+  </script>
 </body>
 </html>
