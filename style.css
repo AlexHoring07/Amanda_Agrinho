@@ -24,7 +24,8 @@ nav {
   display: flex;
   justify-content: center;
   padding: 10px;
-  z-index: 999;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 nav a {
@@ -44,7 +45,7 @@ nav a:hover {
 }
 
 .container {
-  padding: 100px 20px 20px; /* Espaço para o menu fixo */
+  padding: 100px 20px 20px; /* espaço extra para o menu fixo */
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
@@ -52,7 +53,7 @@ nav a:hover {
 
 .main-gallery img {
   display: block;
-  width: 66.6%; /* 2/3 da largura */
+  width: 66.6%; /* 2/3 da largura da página */
   margin: 20px auto;
 }
 
