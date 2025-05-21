@@ -17,15 +17,11 @@ header h1 {
 }
 
 nav {
-  position: fixed;
-  top: 0;
-  width: 100%;
   background-color: #d8b3e6;
   display: flex;
   justify-content: center;
   padding: 10px;
-  z-index: 1000;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 nav a {
@@ -45,7 +41,7 @@ nav a:hover {
 }
 
 .container {
-  padding: 100px 20px 20px; /* espaço extra para o menu fixo */
+  padding: 20px;
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
@@ -89,8 +85,7 @@ footer {
 .voltar-topo {
   position: fixed;
   right: 15px;
-  top: 50%;
-  transform: translateY(-50%);
+  bottom: 30px;
   background-color: #b57edc;
   color: white;
   padding: 10px 14px;
@@ -98,6 +93,7 @@ footer {
   text-decoration: none;
   font-weight: bold;
   border: 1px solid white;
+  display: none;
   transition: background-color 0.3s;
   z-index: 999;
 }
